@@ -8,9 +8,10 @@ class Funcionario(models.Model):
     rut = models.CharField(max_length=100, blank=False, null=False)
 
     class Meta:
-        verbose_name = 'Funcionario'
+        verbose_name ='Funcionario'
         verbose_name_plural = 'Funcionarios'
         ordering = ['rut']
+
 
     def __str__(self):
         return self.nombre + ' ' + self.apellido
